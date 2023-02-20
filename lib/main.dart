@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learningflutter/ui/home_page.dart';
 import 'package:learningflutter/ui/login_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main(){
 
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      theme: ThemeData(primarySwatch: Colors.deepPurple,
+      fontFamily: GoogleFonts.lato().fontFamily,),
       darkTheme: ThemeData(
         brightness: Brightness.dark
       ),
