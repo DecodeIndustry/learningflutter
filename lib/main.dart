@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:learningflutter/ui/home_page.dart';
 import 'package:learningflutter/ui/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:learningflutter/utils/routes.dart';
 
 void main(){
 
@@ -22,11 +23,13 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark
       ),
+      debugShowCheckedModeBanner: false,// this remove debug mark from app
 
       initialRoute: "/login",
       routes: {
           "/":(context)=> LoginPage(),
-        "/login":(context)=> LoginPage()
+        myRoutes.homeRoutes:(context)=> HomePage(),
+        myRoutes.loginRoute:(context)=> LoginPage()
       },
 
     );
