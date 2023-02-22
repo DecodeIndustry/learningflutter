@@ -18,14 +18,14 @@ class MyDrawer extends StatelessWidget {
               padding: EdgeInsets.zero,
 
               child: UserAccountsDrawerHeader(accountName:
-                Text("Osama Kamal",style:
+                const Text("Osama Kamal",style:
                   TextStyle(
                     color: Colors.white
                   ),),
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: Colors.deepPurple
                 ),
-              accountEmail: Text("osamakamal959@gmail.com",style: TextStyle(
+              accountEmail: const Text("osamakamal959@gmail.com",style: TextStyle(
                 color: Colors.white,
               ),),
                 currentAccountPicture: CircleAvatar(
@@ -34,7 +34,7 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(CupertinoIcons.home,color: Colors.white,),
               title: Text("Home",
               textScaleFactor: 1.2,
@@ -43,7 +43,7 @@ class MyDrawer extends StatelessWidget {
               ),),
             ),
 
-            ListTile(
+            const ListTile(
               leading: Icon(CupertinoIcons.profile_circled,color: Colors.white,),
               title: Text("Profile",
                 textScaleFactor: 1.2,
@@ -52,7 +52,7 @@ class MyDrawer extends StatelessWidget {
                 ),),
             ),
 
-            ListTile(
+            const ListTile(
               leading: Icon(CupertinoIcons.mail,color: Colors.white,),
               title: Text("Email",
                 textScaleFactor: 1.2,
