@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,// this remove debug mark from app
 
-      initialRoute: "/login",
+      initialRoute: myRoutes.homeRoutes,
       routes: {
           "/":(context)=> LoginPage(),
         myRoutes.homeRoutes:(context)=> HomePage(),
